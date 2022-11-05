@@ -118,9 +118,9 @@ def print_results(results_dic, results_stats_dic, model,
             #
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR-
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
-            if(sum(results_dic[key][3:]) == 2 and results_dic[key][2] == 0):
-                print("The real dog label: {}, The classifier label: {}".format(
-                    results_dic[key][0], results_dic[key][1]))
+            if (results_dic[key][3] == 1 and results_dic[key][4] == 0) or (
+                    results_dic[key][3] == 0 and results_dic[key][4] == 1):
+                print("Pet Label = ", results_dic[key][0], "Classifier Label= ", results_dic[key][1])
 
      # IF print_incorrect_breed == True AND there were dogs whose breeds
      # were incorrectly classified - print out these cases

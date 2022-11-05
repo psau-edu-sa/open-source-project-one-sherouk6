@@ -61,12 +61,11 @@ def get_pet_labels(image_dir):
     # Processes through each file in the directory, extracting only the words
     # of the file that contain the pet image label
     for idx in range(0, len(in_files), 1):
-
         # Skips file if starts with . (like .DS_Store of Mac OSX) because it
         # isn't an pet image file
         if [idx][0] != ".":
 
-            # Creates temporary label variable to hold pet label name extracted
+    # Creates temporary label variable to hold pet label name extracted
             pet_label = ""
 
             # TODO: 2a. BELOW REPLACE pass with CODE that will process each

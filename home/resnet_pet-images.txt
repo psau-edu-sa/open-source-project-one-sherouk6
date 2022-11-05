@@ -327,9 +327,7 @@ pct_correct_breed   : 90.000000
 pct_correct_notdogs : 90.000000
 
 INCORRECT Dog/NOT Dog Assignments:
-The real dog label: great pyrenees, The classifier label: kuvasz
-The real dog label: beagle, The classifier label: walker hound, walker foxhound
-The real dog label: golden retriever, The classifier label: leonberg
+Pet Label =  cat Classifier Label=  norwegian elkhound, elkhound
 
 INCORRECT Dog Breed Assignment:
 Real:             great pyrenees   Classifier:                         kuvasz
